@@ -11,7 +11,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 
-const CONTRACT_ADDRESS = "0x48Cf1D5e639CEc300263e3E6bbDDcdFeb7d76b52";
+const CONTRACT_ADDRESS = "0xF29309261576102CF64d9c03Ed8Fe20C3533D3E9";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
