@@ -11,7 +11,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 
-const CONTRACT_ADDRESS = "0xF29309261576102CF64d9c03Ed8Fe20C3533D3E9";
+const CONTRACT_ADDRESS = "0xc6220bbceFDf01bC5e92e1F894DCD309f716062D";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -29,6 +29,15 @@ const App = () => {
 
     // check if we are authorized to access the user's accounts
     const accounts = await ethereum.request({ method: 'eth_accounts' });
+
+    // let chainId = await ethereum.request({ method: 'eth_chainId' });
+    // console.log("Connected to chain " + chainId);
+
+    // // String, hex code of the chainId of the Rinkebey test network
+    // const rinkebyChainId = "0x4"; 
+    // if (chainId !== rinkebyChainId) {
+    //   alert("You are not connected to the Rinkeby Test Network!");
+    // }
 
     // grab the first account
     if (accounts.length !== 0) {
